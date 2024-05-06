@@ -83,6 +83,7 @@
     cursor: pointer;
     position: relative;
     left: 260px;
+    bottom: 1px;
   }
 
   .cards{
