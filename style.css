@@ -80,8 +80,9 @@
   }
 
   .add-notes h6{
-    margin-left: 180px;
     cursor: pointer;
+    position: relative;
+    left: 265px;
   }
 
   .cards{
@@ -416,10 +417,10 @@
 }
 .new-col{
   border: 1px solid #28a745;
-  width: 130px;
-  height: 100px;
-  font-size: 13px;
-  padding: 5px;
+  width: 170px;
+  height: 130px;
+  font-size: 15px;
+  padding: 10px;
   background: #28a745;
   border-radius: 8px;
   cursor: pointer;
@@ -432,7 +433,11 @@
 }
 
 .scratch{
-  margin-top: 40px;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .input-box{
