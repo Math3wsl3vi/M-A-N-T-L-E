@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item i{
+    margin-right: 5px;
+}
+
+.sofa-img{
+    background: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.text-light{
+    color: #222;
+    z-index: 1;
+}
+
+.calender p{
+    margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calender .sunday{
+    margin-right: 0;
+}
+
+.banner {
+    position: relative;
+    text-align: left;
+  }
+
+  .greetings{
+    position: absolute;
+    top: 0;
+    left: 7%;
+  }
+
+  .first-page{
+    margin-top: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .offcanvas-body small{
+    height: 40vh;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  .move-offcanvas{
+    position: absolute;
+    right: 1%;
+  }
+
+  .navbar-toggler::after, .navbar-toggler-icon::after{
+    outline: none;
+    border: none;
+    
+  }
+
+  .navbar-toggler::after,
+  .navbar-toggler-icon::after{
+    outline: none;
+    border: none;
+  }
+
+  .notes-page h5{
+    font-size: 14px;
+  }
+
+  .notes-page i{
+    cursor: pointer;
+  }
+
+  .add-notes h6{
+    margin-left: 180px;
+    cursor: pointer;
+  }
+
+  .cards{
+    margin-top: -10px;
+  }
+
+ 
+
+  .account{
+    display: flex;
+    margin: 10px 20px;
+  }
+
+  .names h6{
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .names a{
+    text-decoration: none;
+    color: #222;
+  }
+
+  .names a:hover{
+    color: rgb(40, 167, 69);
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-1{
+    align-items: center;
+  }
+  .btn-1:hover{
+    color: black;
+  }
+
+  .notepad{
+    width: 100%;
+    border-radius: 4px;
+    height:90px;
+    overflow-y: scroll;
+    padding: 5px;
+    font-size: 14px;
+    background: rgb(255, 255, 102);
+    
+  }
+  .notepad:hover, 
+  .notepad:active{
+    outline: none;
+  }
+
+
+  .ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-2{
+    position: absolute;
+    bottom: -15px;
+    left: 29%;
+  }
+
+  .middle-section h2{
+    font-size: 14px;
+    font-family: 'Montserrat'x sans-serif;
+  }
+
+  .btn-3{
+    width: 95%;
+    padding: 5px;
+
+  }
+
+  .middle-section h3{
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Montserrat'x sans-serif;
+  }
+  .middle-section ul {
+    text-align: left;
+  }
+
+  .middle-section ul li{
+    list-style: none;
+    font-size: 13px;
+  }
+
+  .middle-section ul li i{
+    font-size: 13px;
+    margin-right: 4px;
+  }
+
+  .close-btn{
+    position: absolute;
+    left: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 160px;
+  }
+
+  .login-container{
+    margin: 50% 13px;
+  
+  }
+
+  .btn-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px ;
+    width: 100%;
+  }
+
+  .login-part{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    
+  }
+  .login-part h5{
+    font-size: 16px;
+  }
+  
+  .logo-welcome{
+    display: flex;
+    justify-content: center;
+  }
+
+  .middle-part h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  .premium:hover{
+    color: 	#5D3FD3;
+  }
+
+  
+  .google-acc{
+    position: relative;
+  }
+  .google{
+    position: absolute;
+    left:4% ;
+    bottom: 27px;
+  }
+
+  .apple{
+    position: absolute;
+    left:4% ;
+    bottom: 10px;
+    font-size: 20px;
+  }
+
+  .closing{
+    position: relative;
+    left: 90%;
+    top: -6px;
+  }
+
+  /*----calender--*/
+
+  /*.calender{
+    margin: auto;
+    width: 98%;
+    max-width: 380px;
+    padding: 1rem;
+    border: 1px solid #222;
+    border-radius: 10px;
+  }
+
+  .calender header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .calender ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .calender ul li{
+    width: calc(100% / 7);
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #prev,
+#next {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#prev::before,
+#next::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  border-color: #ccc;
+}
+#next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+#prev:hover::before,
+#next:hover::before {
+  border-color: #000;
+}
+.days {
+  font-weight: 600;
+}
+.dates li.today {
+  color: #fff;
+}
+.dates li.today::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+}
+.dates li.inactive {
+  color: #ccc;
+}
+-*/
+
+.sett-1 ul li a{
+  text-decoration: none;
+  color: #222;
+}
+
+.sett-header a{
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+.list-group-item{
+  position: relative;
+}
+.sett-arrow{
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  font-size: 14px;
+}
+
+.premium-btn{
+  position: relative;
+}
+.sett-arrow-1{
+  position: absolute;
+  right: 3%;
+  top: 40%;
+  font-size: 17px;
+}
+
+.version p{
+  font-size: 12px;
+}
+
+.trash{
+  margin-top: 70%;
+  position: relative;
+}
+
+.trash i{
+ position: absolute;
+ left: 40%;
+ font-size: 40px;
+ margin-top: 40px;
+ color: rgb(248, 144, 161);
+}
+
+.footer-icons{
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+ 
+.footer-icons-col {
+  text-align: center;
+  cursor: pointer;
+}
+
+ 
+.footer-icons-col i{
+  font-size: 12px;
+}
+
+.footer-icons-col h6{
+  font-size: 12px;
+}
+
+.footer-icons-col h6:hover{
+  color: #28a745;
+}
+
+.new-page {
+  margin-top: 20px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.new-col{
+  border: 1px solid #28a745;
+  width: 130px;
+  height: 100px;
+  font-size: 13px;
+  padding: 5px;
+  background: #28a745;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 20px rgb(0,0,0,0.1);
+}
+
+.new-col:hover{
+  transform: scale(1.1);
+}
+
+.scratch{
+  margin-top: 40px;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  background: #fff;
+  color: #333;
+  padding: 8px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #222;
+}
+.sett-header-1{
+  margin-top: 15px;
+}
+
+.sett-header-1 a{
+  column-rule: #222;
+  text-decoration: none;
+}

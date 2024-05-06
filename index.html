@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M A N T L E</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eac1be05fe.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid d-flex">
+      <!---navigation-->
+        <div class="navigation">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">M A N T L E</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-6"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-leaf text-success"></i> Mantle</h5>             
+                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex mb-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-star text-success"></i>Shortcuts
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Notepad</a></li>
+                        <li><a class="dropdown-item" href="#">To-Do List</a></li>
+                        <li><a class="dropdown-item" href="#">Planner</a></li>
+                        <li><a class="dropdown-item" href="#">Calender</a></li>
+                        <li><a class="dropdown-item" href="#">Analysis</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="settings.html"><i class="fa-solid fa-gear"></i>Settings </a>
+                      
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login-page.html"><i class="fa-solid fa-tag"></i>Tags</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="trash.html"><i class="fa-solid fa-trash"></i>Trash</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link premium" href="pricing-page.html"> <i class="fa-solid fa-gem"></i>Premium</a>
+                      </li>
+                   
+                    <li class="nav-item ">
+                      <a class="nav-link" href="pricing-page.html"> <i class="fa-solid fa-user"></i>Account</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                   <!-- <div class="account">
+                      <div>
+                        <div class="user">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                      </li>
+                    </div>
+                      <div class="names">
+                        <a href=""><h6>Levi mathews</h6></a>
+                        <a href=""><h6>Levimathews@gmail.com</h6></a>
+                      </div>
+                    </div>
+                </ul>
+              </div>
+            -->
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!--greetings part-->
+        <div class="greetings mt-3">
+      <h3  id="greeting" class="mt-5 text-success fs-5">Good Morning, <span>Levi</span></h3>
+      <!---calender-->
+      <div class="calender d-flex">
+        <p class="sunday" id="day">Sunday</p>
+        <p>,</p>
+        <p id="date">01</p>
+        <p id="month">January</p>
+        <p id="year">2024</p>
+      </div>  
+    </div>
+
+    <!---Notes part navigation-->
+    <div class="first-page d-flex ">
+      <div class="notes-page">
+        <h5>NOTES <a href=""><i class="fa-solid fa-chevron-right text-success"></i></a></h5>
+      </div>
+      <div class="add-notes">
+        <h6><a href="#staticBackdrop"type="button" data-bs-toggle="offcanvas"><i class="fa-solid fa-plus text-success"></i></a></h6>
+      </div>
+    <div class="cards">
+      <button class="btn move-offcanvas " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa-solid fa-ellipsis"></i></button>
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item ">
+            <a class="nav-link text-success"  href=""><i class="fa-regular fa-note-sticky"></i> Create a new note</a>
+        </li>
+        <li class="nav-item text-success">
+            <a class="nav-link "  href=""><i class="fa-solid fa-list-check"></i> Add a task</a>
+        </li>
+        <li class="nav-item text-success">
+          <a class="nav-link"  href=""><i class="fa-solid fa-check"></i> Planner</a>
+      </li>
+      <li class="nav-item text-success">
+        <a class="nav-link"  href=""><i class="fa-regular fa-calendar-days"></i> Calender</a>
+    </li>
+    <li class="nav-item text-success">
+      <a class="nav-link "  href=""><i class="fa-solid fa-spinner text-success"></i> Analysis</a>
+  </li>
+        <li class="nav-item">
+            <a class="nav-link text-danger" data-bs-dismiss="offcanvas" href=""><i class="fa-solid fa-xmark "></i>Close</a>
+        </li>
+
+    </ul>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!--New page-->
+<div class="new">
+<div class="new-page container-fluid ">
+ <div class="new-col" onclick="window.location.href='notes.html'">
+    <a class="text-black text-decoration-none "  href=""><i class="fa-solid fa-plus ms-1"></i> New Note</a>
+  </div>
+  <div class="new-col" onclick="window.location.href='task.html'">
+    <a class="text-black text-decoration-none" href="#"><i class="fa-solid fa-plus ms-1"></i> New Task</a>
+  </div>
+</div>
+<div class="scratch m-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <textarea name="text"  id="notepad" class="notepad" placeholder="Scribble pad"></textarea>
+      <input class="btn btn-success" type="submit" value="Save">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!---footer-->
+<div class="footer">
+<nav class="navbar fixed-bottom bg-body-tertiary">
+  <div class="footer-icons">
+    <div class="footer-icons-col" onclick="window.location.href='create-page.html'">
+    <a href="#"><i class="fa-solid fa-circle-plus text-success"></i></a>
+    <h6>Create</h6>
+  </div>
+  <div class="footer-icons-col" onclick="window.location.href='task.html'">
+    <a href="#"><i class="fa-regular fa-circle-check text-success"></i></a>
+    <h6>Tasks</h6>
+  </div>
+  <div class="footer-icons-col" onclick="window.location.href='notes.html'">
+    <a href="#"><i class="fa-solid fa-pen text-success"></i></a>
+    <h6>Notes</h6>
+  </div>
+  <div class="footer-icons-col" onclick="window.location.href='calender.html'">
+    <a href="#"><i class="fa-regular fa-calendar text-success"></i></a>
+    <h6>Calender</h6>
+  </div>
+  <div class="footer-icons-col" onclick="window.location.href='notes.html'">
+    <a href="#"><i class="fa-solid fa-spinner text-success"></i></a>
+    <h6>Analysis</h6>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
